@@ -1,32 +1,94 @@
-# Ignore Python cache
+# Python cache
 __pycache__/
 *.pyc
+*.py[cod]
+*$py.class
 
-# Ignore virtual environment
+# Virtual environments
 .venv/
 env/
 venv/
 
-# Ignore environment/config files
+# Environment/config files
 .env
+.envrc
 
-# Ignore logs and alerts
+# Logs and alerts
 *.log
+logs/
+alerts.log
+fraud_alerts.log
 
-# Ignore generated CSV logs
+# Generated CSVs
 *.csv
-!metrics/*.csv  # except model metrics
-!models/*.pkl   # keep model files
+!metrics/*.csv     # Keep model metrics
+!models/*.pkl      # Keep model files
 
-# Ignore Jupyter notebook checkpoints
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# Ignore OS / IDE / Editor files
+# Editors/IDEs
 .DS_Store
 *.swp
 *.swo
 .vscode/
 .idea/
+.spyderproject
+.spyproject
+.ropeproject
 
-# Ignore Docker artifacts
+# Testing / Coverage
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+
+# Build/distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+target/
+
+# Docker
 *.pid
+docker-compose.override.yml
+
+# PyInstaller
+*.spec
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pytype/
+.pyre/
+
+# Misc
+*.manifest
+*.mo
+*.pot
+*.pdm-python
+.pdm-build/
+.ruff_cache/
+.pypirc
+.cursorignore
+.cursorindexingignore
