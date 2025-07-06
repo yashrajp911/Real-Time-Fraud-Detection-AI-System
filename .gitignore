@@ -1,0 +1,32 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+.venv/
+env/
+venv/
+
+# Ignore environment/config files
+.env
+
+# Ignore logs and alerts
+*.log
+
+# Ignore generated CSV logs
+*.csv
+!metrics/*.csv  # except model metrics
+!models/*.pkl   # keep model files
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS / IDE / Editor files
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Ignore Docker artifacts
+*.pid
